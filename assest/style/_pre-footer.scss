@@ -1,0 +1,47 @@
+.prefooter{
+    background-color: $clr-bg-prefooter;
+    .acess{
+        display: flex;
+        color: #fff;
+        padding-block:4rem ;
+        justify-content: space-between;
+        align-items: center;
+        .pre-footer-content{
+            font-family: raleway;
+            h3{
+                font-weight: 800;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+        }
+        .pre-footer-form{
+            max-width: 25rem;
+            
+            button{
+                padding: 0.5rem 2rem;
+                background-color:$clr-btn-purpule;
+                color: #fff;
+                border: 0;
+                border-radius: 5px;
+                margin-top: 0.5rem;
+            }
+            input{
+                padding: 0.5rem 5rem 0.5rem 0.5rem;
+                border: 0;
+                border-radius: 5px;
+            }
+        }
+    }
+    @media (max-width:990px) {
+        .acess{
+            text-align: center;
+            .pre-footer-form{
+                margin: 0 auto;
+                input{width: 100%;}
+                button{width: 100%;}
+            }
+        }
+
+    }
+}

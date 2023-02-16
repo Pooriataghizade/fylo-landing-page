@@ -1,0 +1,117 @@
+
+@import"font";
+@import"variables";
+@import"header";
+@import"main";
+@import"pre-footer";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+footer{
+    background-color: $clr-bg-footer;
+    padding: 4rem;
+    img{
+        max-width: 100%;
+        display: block;
+        width: 7rem;
+        // @media (max-width:990px) {
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        // }
+    }
+    .footer-culms{
+        margin-top: 2rem;
+        // @media (max-width:990px) {
+        //     width: 100%;
+        //     text-align: center; 
+        // }
+
+    }
+    .icon{
+        display: flex;
+        gap: 1rem;
+        @media (max-width:990px) {
+            
+            justify-content: center;
+        }
+        
+        
+        i::before{
+            color: aliceblue;
+            max-width: 100%;
+            width: 2rem;
+            border-radius: 50%;
+            padding: 0.4rem;
+            border: 1px solid #fff;
+            
+        }
+        i:hover::before{
+            color: #575989;
+            cursor: pointer;
+        }
+    }
+    .phone{
+        margin-block: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        // justify-content: center;
+        :hover{
+            color: #575989;
+            cursor: pointer;
+        }
+
+        img{
+            max-width: 100%;
+            display: inline-block;
+            width: 1.5rem;
+        }
+
+        p{
+            color: aliceblue;
+            margin-top: 0.5rem;  
+        }
+    }
+
+    .gmail{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        // justify-content: center;
+        margin-block: 0.5rem;
+        :hover{
+            color: #575989;
+            cursor: pointer;
+        }
+        img{
+            max-width: 100%;
+            display: inline-block;
+            width: 1.5rem;
+        }
+        p{
+            color: aliceblue;
+            margin-top: 0.5rem;  
+        }
+
+
+    }
+    .links{
+        margin-block: 0.5rem;
+        ul{
+            list-style-type: none;
+            :hover{
+                color: #575989;
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+    
+}

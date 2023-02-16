@@ -1,0 +1,290 @@
+@font-face {
+  font-family: raleway;
+  src: url(../font/Raleway/static/Raleway-ExtraBold.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: raleway;
+  src: url(../font/Raleway/static/Raleway-Bold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: raleway;
+  src: url(../font/Raleway/static/Raleway-Medium.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: raleway;
+  src: url(../font/Raleway/static/Raleway-Light.ttf);
+  font-weight: 200;
+}
+header {
+  margin-block: 2rem;
+}
+header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-content img {
+  max-width: 100%;
+  display: block;
+}
+header .header-content .content {
+  font-family: raleway;
+  max-width: 100%;
+  width: 50%;
+}
+header .header-content .content h2 {
+  font-weight: 800;
+}
+header .header-content .content .form {
+  display: flex;
+  gap: 1rem;
+}
+header .header-content .content .form input {
+  padding: 0.5rem 5rem 0.5rem 1rem;
+  border-radius: 5px;
+  border: 0.5px solid #575989;
+}
+header .header-content .content .form button {
+  padding: 0.5rem 4rem;
+  background-color: #2f65f9;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+header nav img {
+  max-width: 100%;
+  display: block;
+  width: 7rem;
+}
+header nav h1 {
+  font-family: raleway;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+header nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+header nav ul a {
+  color: black;
+  text-decoration: none;
+}
+@media (max-width: 990px) {
+  header .header-content {
+    flex-direction: column-reverse;
+  }
+  header .header-content .content {
+    width: 100%;
+    text-align: center;
+  }
+  header .header-content .content .form {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+main {
+  background-color: #f9f8fe;
+}
+main .content-productive .text {
+  font-family: raleway;
+}
+main .content-productive .text h2 {
+  font-weight: 800;
+}
+main .content-productive .text a {
+  color: #109175;
+}
+main .content-productive .comment-box {
+  margin-top: 35px;
+  box-shadow: 0px 0px 30px 0.5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2rem 2rem;
+  max-width: 65%;
+}
+main .content-productive .comment-box .who {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin-top: 1.25rem;
+  padding: 1rem 0rem 0rem 0rem;
+}
+main .content-productive .comment-box .who img {
+  max-width: 100%;
+  width: 3rem;
+  border-radius: 50%;
+}
+main .content-productive .comment-box .who .name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  font-size: clamp(0.8rem, 0.2rem + 1vw, 0.8rem);
+}
+main .image img {
+  display: block;
+  max-width: 100%;
+}
+@media (max-width: 990px) {
+  main .split {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  main .split .comment-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+  }
+}
+
+.prefooter {
+  background-color: #575989;
+}
+.prefooter .acess {
+  display: flex;
+  color: #fff;
+  padding-block: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.prefooter .acess .pre-footer-content {
+  font-family: raleway;
+}
+.prefooter .acess .pre-footer-content h3 {
+  font-weight: 800;
+}
+.prefooter .acess .pre-footer-content p {
+  font-size: 0.9rem;
+}
+.prefooter .acess .pre-footer-form {
+  max-width: 25rem;
+}
+.prefooter .acess .pre-footer-form button {
+  padding: 0.5rem 2rem;
+  background-color: #2f65f9;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+.prefooter .acess .pre-footer-form input {
+  padding: 0.5rem 5rem 0.5rem 0.5rem;
+  border: 0;
+  border-radius: 5px;
+}
+@media (max-width: 990px) {
+  .prefooter .acess {
+    text-align: center;
+  }
+  .prefooter .acess .pre-footer-form {
+    margin: 0 auto;
+  }
+  .prefooter .acess .pre-footer-form input {
+    width: 100%;
+  }
+  .prefooter .acess .pre-footer-form button {
+    width: 100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #07043b;
+  padding: 4rem;
+}
+footer img {
+  max-width: 100%;
+  display: block;
+  width: 7rem;
+}
+footer .footer-culms {
+  margin-top: 2rem;
+}
+footer .icon {
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width: 990px) {
+  footer .icon {
+    justify-content: center;
+  }
+}
+footer .icon i::before {
+  color: aliceblue;
+  max-width: 100%;
+  width: 2rem;
+  border-radius: 50%;
+  padding: 0.4rem;
+  border: 1px solid #fff;
+}
+footer .icon i:hover::before {
+  color: #575989;
+  cursor: pointer;
+}
+footer .phone {
+  margin-block: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer .phone :hover {
+  color: #575989;
+  cursor: pointer;
+}
+footer .phone img {
+  max-width: 100%;
+  display: inline-block;
+  width: 1.5rem;
+}
+footer .phone p {
+  color: aliceblue;
+  margin-top: 0.5rem;
+}
+footer .gmail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 0.5rem;
+}
+footer .gmail :hover {
+  color: #575989;
+  cursor: pointer;
+}
+footer .gmail img {
+  max-width: 100%;
+  display: inline-block;
+  width: 1.5rem;
+}
+footer .gmail p {
+  color: aliceblue;
+  margin-top: 0.5rem;
+}
+footer .links {
+  margin-block: 0.5rem;
+}
+footer .links ul {
+  list-style-type: none;
+}
+footer .links ul :hover {
+  color: #575989;
+}
+footer .links ul a {
+  color: #fff;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
